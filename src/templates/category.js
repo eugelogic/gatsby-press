@@ -3,10 +3,10 @@ import { graphql } from 'gatsby'
 
 const CategoryTemplate = props => {
     const { data: { wpgql: { category } } } = props
-    const { name, count, description } = category
+    const { name, description } = category
     return (
         <div>
-            <h1>Category: {name}</h1><span> ({count})</span>
+            <h1>Category: {name}</h1>
             <div dangerouslySetInnerHTML={{ __html: description}} />
         </div>
     )
@@ -21,7 +21,6 @@ export const pageQuery = graphql`
                 id
                 name
                 slug
-                count
                 description
             }
         }
