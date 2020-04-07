@@ -1,13 +1,14 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import Layout from '../components/layout'
 
 const TagTemplate = props => {
     const { data: { wpgql: { tag } } } = props
     const { name, count } = tag
     return (
-        <div>
+        <Layout>
             <h1>Tag: {name} ({count})</h1>
-        </div>
+        </Layout>
     )
 }
 

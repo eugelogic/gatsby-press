@@ -1,14 +1,15 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import Layout from '../components/layout'
 
 const CategoryTemplate = props => {
     const { data: { wpgql: { category } } } = props
     const { name, description } = category
     return (
-        <div>
+        <Layout>
             <h1>Category: {name}</h1>
             <div dangerouslySetInnerHTML={{ __html: description}} />
-        </div>
+        </Layout>
     )
 }
 

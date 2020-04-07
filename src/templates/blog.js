@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 import Pagination from '../components/pagination'
+import Layout from '../components/layout'
 
 const BlogIndex = props => {
     const {
@@ -12,7 +13,7 @@ const BlogIndex = props => {
 
     const currentPage = (1 < pageNumber) ? ` - page ${pageNumber}` : ``
     return (
-        <div>
+        <Layout>
             <h1>Blog{currentPage}</h1>
             {posts.nodes.map(post =>
             <article key={post.id}>
@@ -27,7 +28,7 @@ const BlogIndex = props => {
             </article>
             )}
             <Pagination pageNumber={pageNumber} hasNextPage={hasNextPage} />
-        </div>
+        </Layout>
     )
 }
 
