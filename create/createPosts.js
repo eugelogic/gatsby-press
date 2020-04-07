@@ -27,7 +27,7 @@ module.exports = async ({ actions, graphql }) => {
 
     // Blog Index (1/3)
     const blogPages = []
-    let pageNumber = 0
+    let pageNumber = 1
     //
 
     const fetchPosts = async variables =>
@@ -44,7 +44,7 @@ module.exports = async ({ actions, graphql }) => {
             // Blog Index (2/3)
             const nodeIds = nodes.map(node => node.postId)
             const blogTemplate = path.resolve(`./src/templates/blog.js`)
-            const blogPath = !variables.after ? `/blog/` : `/blog/page/${pageNumber + 1}`
+            const blogPath = !variables.after ? `/blog/` : `/blog/page/${pageNumber}`
 
             blogPages[pageNumber] = {
                 path: blogPath,

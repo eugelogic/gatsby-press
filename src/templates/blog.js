@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
+import Pagination from '../components/pagination'
 
 const BlogIndex = props => {
     const {
@@ -9,7 +10,7 @@ const BlogIndex = props => {
         pageContext: { pageNumber, hasNextPage }
     } = props
 
-    const currentPage = pageNumber ? ` - page ${pageNumber + 1}` : ``
+    const currentPage = (1 < pageNumber) ? ` - page ${pageNumber}` : ``
     return (
         <div>
             <h1>Blog{currentPage}</h1>
@@ -24,7 +25,8 @@ const BlogIndex = props => {
                 </h3>
                 <div dangerouslySetInnerHTML={{ __html: post.excerpt }} />
             </article>
-)}
+            )}
+            <Pagination pageNumber={pageNumber} hasNextPage={hasNextPage} />
         </div>
     )
 }
