@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
+import { createLocalLink } from '../utils'
 
 const MainMenu = () => {
     const { wpgql: { menuItems: { nodes } } } = useStaticQuery(
@@ -22,7 +23,7 @@ const MainMenu = () => {
             <ul>
                 {nodes && nodes.map(menuItem =>
                 <li key={menuItem.id}>
-                    <Link to={menuItem.url}>{menuItem.label}</Link>
+                    <Link to={createLocalLink(menuItem.url)}>{menuItem.label}</Link>
                 </li>
                 )}
             </ul>
