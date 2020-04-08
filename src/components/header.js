@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
+import MainMenu from './MainMenu'
 
 const Header = () => {
     const data = useStaticQuery(graphql`
@@ -19,6 +20,7 @@ const Header = () => {
                 <Link to={`/`}>{settings.title}</Link>
             </h2>
             <em>{settings.description}</em>
+            <MainMenu />
         </div>
     )
 }
