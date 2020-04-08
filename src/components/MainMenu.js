@@ -5,28 +5,48 @@ import { createLocalLink } from '../utils'
 const MainMenu = () => {
     const { wpgql: { menuItems: { nodes } } } = useStaticQuery(
         graphql`
+            fragment MenuFields on WPGQL_MenuItem {
+                id
+                label
+                url
+            }
+
             query {
                 wpgql {
                     menuItems(where: {location: PRIMARY}) {
                         nodes {
-                            id
-                            label
-                            url
+                            ...MenuFields
+                            childItems {
+                                nodes {
+                                    ...MenuFields
+                                }
+                            }
                         }
                     }
                 }
             }
         `)
 
+    const reanderMenuItem = menuItem => {
+        let hasChild = false
+        if(menuItem.childItems && menuItem.childItems.nodes.length) {
+            hasChild = true
+        }
+        return (
+            <li key={menuItem.id}>
+                <Link to={createLocalLink(menuItem.url)}>{menuItem.label}</Link>
+                {hasChild && renderChildMenu(menuItem)}
+            </li>
+        )
+    }
+
+    const renderChildMenu = menuItem => {
+        return <ul>{menuItem.childItems.nodes.map(child => reanderMenuItem(child))}</ul>
+    }
+
     return (
         <nav>
-            <ul>
-                {nodes && nodes.map(menuItem =>
-                <li key={menuItem.id}>
-                    <Link to={createLocalLink(menuItem.url)}>{menuItem.label}</Link>
-                </li>
-                )}
-            </ul>
+            <ul>{nodes && nodes.map(menuItem => reanderMenuItem(menuItem))}</ul>
         </nav>
     )
 }
