@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Headless WordPress with Gatsby`,
-    description: `Demo project of a headless WordPress site with Gatsby on the front end.`,
+    title: `Gatsby with Headless WordPress`,
+    description: `Pilot project of a Gatsby website with headless WordPress.`,
     author: `@EugeneMolari`
   },
   plugins: [
