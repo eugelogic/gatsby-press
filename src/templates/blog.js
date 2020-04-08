@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import Pagination from '../components/pagination'
 import Layout from '../components/layout'
+import moment from "moment/moment"
 
 const BlogIndex = props => {
     const {
@@ -20,7 +21,7 @@ const BlogIndex = props => {
                 <h2>
                     <Link to={`/blog/${post.slug}`}>{post.title}</Link>
                 </h2>
-                <time>{post.date}</time>
+                <time>{moment(post.date).format(`Do MMMM YYYY`)}</time>
                 <h3>
                     <Link to={`user/${post.author.slug}`}>Author: {post.author.name}</Link>
                 </h3>
