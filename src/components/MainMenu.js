@@ -2,6 +2,8 @@ import React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import { createLocalLink } from '../utils'
 
+import '../styles/global.css'
+
 const MainMenu = () => {
     const { wpgql: { menuItems: { nodes } } } = useStaticQuery(
         graphql`
@@ -45,7 +47,7 @@ const MainMenu = () => {
     }
 
     return (
-        <nav>
+        <nav className="main-menu">
             <ul>{nodes && nodes.map(menuItem => reanderMenuItem(menuItem))}</ul>
         </nav>
     )

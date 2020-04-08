@@ -6,4 +6,43 @@ body {
 
 img {
   width: 100%;
+  height: auto;
+}
+
+.main-menu > ul {
+  margin: 20px 0 0;
+  padding: 0;
+  display: flex;
+}
+
+.main-menu li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu a {
+  display: block;
+  padding: 10px;
+  text-transform: uppercase;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.75);
+  text-decoration: none;
+}
+
+.main-menu a:hover,
+.main-menu a[aria-current="page"] {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.main-menu li ul {
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+.main-menu li:hover ul {
+  display: block;
+  position: absolute;
 }
