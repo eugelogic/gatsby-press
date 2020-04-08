@@ -22,7 +22,7 @@ const BlogIndex = props => {
                 </h2>
                 <time>{post.date}</time>
                 <h3>
-                    <Link to={post.author.uri}>Author: {post.author.name}</Link>
+                    <Link to={`user/${post.author.slug}`}>Author: {post.author.name}</Link>
                 </h3>
                 <div dangerouslySetInnerHTML={{ __html: post.excerpt }} />
             </article>
@@ -46,7 +46,7 @@ export const pageQuery = graphql`
                     date
                     author {
                         name
-                        uri
+                        slug
                     }
                     excerpt(format: RENDERED)
                 }
