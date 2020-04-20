@@ -14,14 +14,8 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-<<<<<<< HEAD
-    "gatsby": "2.20.14",
-    "gatsby-source-graphql": "2.3.2",
-    "moment": "^2.24.0",
-=======
     "gatsby": "2.20.26",
     "gatsby-source-graphql": "2.4.2",
->>>>>>> 5ec9b4e4b9e7b99e658e91be37c91277b89b47f2
     "react": "16.13.1",
     "react-dom": "16.13.1"
   },
