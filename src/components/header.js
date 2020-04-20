@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
-import MainMenu from './MainMenu'
+import MainMenu from './main-menu'
 
 const Header = () => {
     const data = useStaticQuery(graphql`
