@@ -12,6 +12,17 @@ module.exports = {
         fieldName: `wpgql`,
         url: `https://gatsbypress.website/graphql`
       }
+    },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Open Sans`,
+            variant: [`400`, `700`]
+          }
+        ]
+      }
     }
   ]
 }
