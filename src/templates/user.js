@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import moment from 'moment/moment'
 
 const UserTemplate = props => {
     const { data: { wpgql: { user } } } = props
@@ -16,7 +17,7 @@ const UserTemplate = props => {
                 <h2>
                     <Link to={`/blog/${post.slug}`}>{post.title}</Link>
                 </h2>
-                <time>{post.date}</time>
+                <time>{moment(post.date).format("Do MMMM YYYY")}</time>
                 <div dangerouslySetInnerHTML={{ __html: post.excerpt }} />
             </article>
             )}
