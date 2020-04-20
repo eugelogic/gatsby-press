@@ -14,7 +14,7 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "gatsby": "2.20.26",
+    "gatsby": "2.20.27",
     "gatsby-plugin-prefetch-google-fonts": "1.4.3",
     "gatsby-source-graphql": "2.4.2",
     "react": "16.13.1",
