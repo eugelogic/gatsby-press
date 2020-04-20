@@ -1,0 +1,46 @@
+.metadata {
+  display: flex;
+  justify-content: space-between;
+}
+
+.metadata p {
+  margin: 0;
+}
+
+.metadata p a,
+.taxonomy a {
+  text-decoration: none;
+  color: black;
+}
+
+.metadata p a:hover,
+.metadata p a:active,
+.taxonomy a:hover,
+.taxonomy a:active {
+  text-decoration: underline;
+}
+
+.taxonomy {
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+.taxonomy ul,
+.taxonomy li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline;
+}
+
+.taxonomy ul {
+  padding-left: 5px;
+}
+
+.taxonomy ul li:before {
+  content: " - ";
+}
+
+.taxonomy ul li:first-child:before {
+  content: "" !important;
+}
