@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
-import Pagination from '../components/pagination'
-import Layout from '../components/layout'
+import Pagination from '../components/Pagination'
+import Layout from '../components/Layout'
 import moment from "moment/moment"
 
 const BlogIndex = props => {

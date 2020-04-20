@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 
 const TagTemplate = props => {
     const { data: { wpgql: { tag } } } = props
