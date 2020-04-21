@@ -43,3 +43,4 @@
 ## Features To Be Explored
 
 - [ ] integration with [Gravity Forms](https://www.gravityforms.com/)
+- [ ] integration with [Yoast SEO](https://yoast.com/wordpress/plugins/seo/)
