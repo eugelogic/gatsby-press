@@ -35,7 +35,7 @@ export const pageQuery = graphql`
                 name
                 slug
                 description
-                posts {
+                posts(first: 100) {
                     nodes {
                         id
                         title(format: RENDERED)
