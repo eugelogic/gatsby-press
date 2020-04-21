@@ -53,3 +53,11 @@ h3 {
   display: block;
   position: absolute;
 }
+
+.footer {
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid grey;
+}
