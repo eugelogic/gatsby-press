@@ -10,6 +10,36 @@
   Gatsby with Headless WordPress
 </h1>
 
-[Gatsby](https://www.gatsbyjs.org/) is a static site generetor\* based on the modern [React](https://reactjs.org/) javascript library and [WordPress](https://wordpress.org/) powers more than a third of the web, they are both free and open source softwares so why not combining the two together to build blazing fast, safe, scalable websites whilst reatining the familiarity of the WordPress admin area.
+[Gatsby](https://www.gatsbyjs.org/) is a modern static site generetor\* based on the ubiquitous [React](https://reactjs.org/) javascript library and [WordPress](https://wordpress.org/) is a well established CMS (17 years old) that powers more than a third of the web, they are both **free and open source** softwares so why not combining the two together to build blazing **fast, safe, scalable** websites whilst retaining the familiarity of the WordPress admin area.
 
 <small>\* = Gatsby is more than a static site generetor <a href="https://www.gatsbyjs.org/blog/2018-10-15-beyond-static-intro/">read "Beyond Static" blog post</a> by Dustin Schau, Head of Product @ GatsbyJS.</small>
+
+---
+
+🌍 See the website in action at [https://gatsby-press.netlify.app/](https://gatsby-press.netlify.app/)
+
+---
+
+## Features Implemented So Far
+
+- ✅ pages
+- ✅ front page slug
+- ✅ posts
+- ✅ posts metadata
+- ✅ categories
+- ✅ tags
+- ✅ users
+- ✅ menu items
+- ✅ some site general settings
+
+## Features To Be Implemented
+
+- [ ] featured images
+- [ ] user's avatar
+- [ ] blog post comments
+- [ ] advanced custom fields
+- [ ] custom post types
+
+## Features To Be Explored
+
+- [ ] integration with [Gravity Forms](https://www.gravityforms.com/)
