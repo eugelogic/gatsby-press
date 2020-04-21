@@ -15,13 +15,13 @@ const Header = () => {
     `)
     const { generalSettings: settings } = data.wpgql
     return (
-        <div>
+        <header className="header">
             <h2>
                 <Link to={`/`}>{settings.title}</Link>
             </h2>
             <em>{settings.description}</em>
             <MainMenu />
-        </div>
+        </header>
     )
 }
 
