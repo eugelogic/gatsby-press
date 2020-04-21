@@ -23,6 +23,13 @@ module.exports = {
           }
         ]
       }
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-39423737-15",
+        head: true
+      }
     }
   ]
 }
