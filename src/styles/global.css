@@ -16,6 +16,16 @@ h3 {
   font-weight: 700;
 }
 
+.header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.75);
+}
+
+.header h2 a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+}
+
 .main-menu > ul {
   margin: 20px 0 0;
   padding: 0;
