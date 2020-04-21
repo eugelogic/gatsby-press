@@ -16,7 +16,7 @@
 
 ---
 
-🌍 See the website in action at [https://gatsby-press.netlify.app/](https://www.gatsbypress.co.uk/)
+🌍 See the website in action at [https://www.gatsbypress.co.uk/](https://www.gatsbypress.co.uk/)
 
 ---
 
