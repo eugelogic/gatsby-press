@@ -1,3 +1,6 @@
+require('dotenv').config();
+const wPURL = process.env.WORDPRESS_URL
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby with Headless WordPress`,
@@ -10,7 +13,7 @@ module.exports = {
       options: {
         typeName: `WPGQL`,
         fieldName: `wpgql`,
-        url: `https://gatsbypress.website/graphql`
+        url: `${wPURL}graphql`
       }
     },
     {
