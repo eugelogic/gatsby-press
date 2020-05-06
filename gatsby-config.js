@@ -1,5 +1,5 @@
 require('dotenv').config();
-const uRL = process.env.GATSBY_SOURCE_GRAPHQL_URL
+const uRL = process.env.WORDPRESS_GRAPHQL_URL
 
 module.exports = {
   siteMetadata: {
