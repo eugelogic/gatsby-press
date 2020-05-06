@@ -1,9 +1,11 @@
 require('dotenv').config();
 const uRL = process.env.GATSBY_SOURCE_GRAPHQL_URL
+const siteURL = process.env.GATSBY_SITE_URL
 
 module.exports = {
   siteMetadata: {
     title: `Gatsby with Headless WordPress`,
+    siteUrl: `${siteURL}`,
     description: `Pilot project of a Gatsby website with headless WordPress.`,
     author: `@EugeneMolari`
   },
@@ -14,6 +16,12 @@ module.exports = {
         typeName: `WPGQL`,
         fieldName: `wpgql`,
         url: `${uRL}`
+      }
+    },
+    {
+      resolve: `gatsby-plugin-robots-txt`,
+      options: {
+        policy: [{ userAgent: `*`, disallow: `/`}]
       }
     },
     {
