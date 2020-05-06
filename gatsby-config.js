@@ -1,5 +1,5 @@
 require('dotenv').config();
-const wPURL = process.env.WORDPRESS_URL
+const uRL = process.env.GATSBY_SOURCE_GRAPHQL_URL
 
 module.exports = {
   siteMetadata: {
@@ -13,7 +13,7 @@ module.exports = {
       options: {
         typeName: `WPGQL`,
         fieldName: `wpgql`,
-        url: `${wPURL}graphql`
+        url: `${uRL}`
       }
     },
     {
