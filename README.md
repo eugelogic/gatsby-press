@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="75" />
+    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="75" />
   </a>
   <a href="https://wordpress.org/">
     <img alt="WordPress" src="/static/wordpress-logotype-w-mark.png" width="75" />
