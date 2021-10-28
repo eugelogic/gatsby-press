@@ -44,3 +44,7 @@
 
 - [ ] integration with [Gravity Forms](https://www.gravityforms.com/)
 - [ ] integration with [Yoast SEO](https://yoast.com/wordpress/plugins/seo/)
+
+## Source
+
+Project inspired by Zac Gordon's <a href="https://javascriptforwp.com/product/headless-wordpress-and-gatsby/" target="_blank" rel="noopener noreferrer">Headless WordPress w Gatsby JS</a>
